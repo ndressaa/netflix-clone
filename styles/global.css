@@ -1,0 +1,12 @@
+:root {
+  --main-red: #E50914;
+  --black: #141414;
+  --light-gray: #AAA;
+  --white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
