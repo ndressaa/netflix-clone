@@ -1,8 +1,8 @@
 :root {
-  --main-red: #E50914;
-  --black: #141414;
-  --light-gray: #AAA;
-  --white: #FFF;
+  --brand-red: #e50914;
+  --background: #141414;
+  --light-gray: #e3e4e3;
+  --white: #fff;
 }
 
 * {
