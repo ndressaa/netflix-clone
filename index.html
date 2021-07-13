@@ -18,7 +18,7 @@
       <nav>
         <a href="#home">Home</a>
         <a href="#tv-shows">TV Shows</a>
-        <a href="#">Movies</a>
+        <a href="#movies">Movies</a>
         <a href="#">My List</a>
       </nav>
     </div>
@@ -44,7 +44,7 @@
   <section id="tv-shows">
     <h2>TV Shows</h2>
     <div>
-      <button onclick="tvShowsNavigation(event)" class="left">
+      <button class="left" onclick="tvShowsNavigation(event)">
         <i class="fas fa-chevron-left"></i>
       </button>
       <div id="tv-shows-carousel">
@@ -56,11 +56,31 @@
         <img src="assets/thewitcher-thumb.jpg" alt="The Witcher">
         <img src="assets/modernfamily-thumb.jpg" alt="Modern Family">
       </div>
-      <button onclick="tvShowsNavigation(event)" class="right">
+      <button class="right" onclick="tvShowsNavigation(event)">
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>
   </section>
-  <br><br><br><br><br>
+  <br>
+  <section id="movies">
+    <h2>Movies</h2>
+    <div>
+      <button class="left" onclick="moviesNavigation(event)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div id="movies-carousel">
+        <img src="assets/300-thumb.jpg" alt="300">
+        <img src="assets/bumblebee-thumb.jpg" alt="Bumblebee">
+        <img src="assets/hancock-thumb.jpg" alt="Hancock">
+        <img src="assets/kungfupanda-thumb.jpg" alt="Kung Fu Panda">
+        <img src="assets/matrix-thumb.jpg" alt="Matrix">
+        <img src="assets/rango-thumb.jpg" alt="Rango">
+        <img src="assets/shrek-thumb.jpg" alt="Shrek">
+      </div>
+      <button class="right" onclick="moviesNavigation(event)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
 </body>
 </html>

@@ -1,8 +1,11 @@
-let tvShowsCarousel;
-let tvShowsNavValue = 0;
+let tvShowsCarousel, moviesCarousel;
+let 
+  tvShowsNavValue = 0,
+  moviesNavValue = 0;
 
 window.onload = function () {
   tvShowsCarousel = document.getElementById('tv-shows-carousel');
+  moviesCarousel = document.getElementById('movies-carousel');
 }
 
 function tvShowsNavigation(event) {
@@ -19,5 +22,22 @@ function tvShowsNavigation(event) {
     }
     tvShowsNavValue -= 240;
     tvShowsCarousel.style.left = `${tvShowsNavValue}px`;
+  }
+}
+
+function moviesNavigation(event) {
+  if (event.target.className.includes('left')) {
+    if (moviesCarousel.style.left === '0px' || moviesCarousel.style.left === '') {
+      return;
+    }
+    moviesNavValue += 240;
+    moviesCarousel.style.left = `${moviesNavValue}px`;
+  }
+  if (event.target.className.includes('right')) {
+    if (moviesCarousel.style.left === '-480px') {
+      return;
+    }
+    moviesNavValue -= 240;
+    moviesCarousel.style.left = `${moviesNavValue}px`;
   }
 }
