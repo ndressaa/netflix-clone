@@ -1,11 +1,12 @@
-let tvShowsCarousel, moviesCarousel;
 let 
-  tvShowsNavValue = 0,
-  moviesNavValue = 0;
+  tvShowsCarousel, tvShowsNavValue = 0,
+  moviesCarousel, moviesNavValue = 0,
+  myListCarousel, myListNavValue = 0; 
 
 window.onload = function () {
   tvShowsCarousel = document.getElementById('tv-shows-carousel');
   moviesCarousel = document.getElementById('movies-carousel');
+  myListCarousel = document.getElementById('my-list-carousel');
 }
 
 function tvShowsNavigation(event) {
@@ -39,5 +40,22 @@ function moviesNavigation(event) {
     }
     moviesNavValue -= 240;
     moviesCarousel.style.left = `${moviesNavValue}px`;
+  }
+}
+
+function myListNavigation(event) {
+  if (event.target.className.includes('left')) {
+    if (myListCarousel.style.left === '0px' || myListCarousel.style.left === '') {
+      return;
+    }
+    myListNavValue += 240;
+    myListCarousel.style.left = `${myListNavValue}px`;
+  }
+  if (event.target.className.includes('right')) {
+    if (myListCarousel.style.left === '-480px') {
+      return;
+    }
+    myListNavValue -= 240;
+    myListCarousel.style.left = `${myListNavValue}px`;
   }
 }
