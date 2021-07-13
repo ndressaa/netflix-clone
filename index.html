@@ -44,7 +44,9 @@
   <section id="tv-shows">
     <h2>TV Shows</h2>
     <div>
-      <button onclick="toLeft()"><</button>
+      <button onclick="tvShowsNavigation(event)" class="left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
       <div id="tv-shows-carousel">
         <img src="assets/b99-thumb.jpg" alt="Brooklyn Nine-nine">
         <img src="assets/breakingbad-thumb.jpg" alt="Breaking Bad">
@@ -54,7 +56,9 @@
         <img src="assets/thewitcher-thumb.jpg" alt="The Witcher">
         <img src="assets/modernfamily-thumb.jpg" alt="Modern Family">
       </div>
-      <button onclick="toRight()">></button>
+      <button onclick="tvShowsNavigation(event)" class="right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
   </section>
   <br><br><br><br><br>
