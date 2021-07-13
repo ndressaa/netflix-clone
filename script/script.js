@@ -14,7 +14,7 @@ function toLeft() {
 }
 
 function toRight() {
-  if (tvShowsCarousel.style.left === '0px') {
+  if (tvShowsCarousel.style.left === '0px' || tvShowsCarousel.style.left === '') {
     return;
   }
   value += 240;
