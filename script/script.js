@@ -64,7 +64,7 @@ let header = document.getElementById('header');
 
 function changeBg() {
   if (window.scrollY === 0) {
-    header.style.background = 'initial';
+    header.style.background = 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))';
   }
   if (window.scrollY !== 0) {
     header.style.background = 'var(--background)';
