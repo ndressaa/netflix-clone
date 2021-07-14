@@ -59,3 +59,14 @@ function myListNavigation(event) {
     myListCarousel.style.left = `${myListNavValue}px`;
   }
 }
+
+let header = document.getElementById('header');
+
+function changeBg() {
+  if (window.scrollY === 0) {
+    header.style.background = 'initial';
+  }
+  if (window.scrollY !== 0) {
+    header.style.background = 'var(--background)';
+  }
+}
